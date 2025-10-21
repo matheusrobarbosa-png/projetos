@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meu portifólio</title>
+     <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap-reboot.css">
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Matheus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Seção de Apresentação -->
+  <div class="container text-center mt-5 pt-5">
+    <h1 class="titulo">Prazer me chamo Matheus</h1>
+    <p class="lead subtitulo">Desenvolvedor Web iniciante e apaixonado por Futebol</p>
+  </div>
+  
+  <!-- Início da Seção de Projetos -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Meus Projetos</h2>
+
+    <!-- ESTRUTURA CORRETA: Uma única "row" para todos os cards -->
+    <div class="row">
+
+      <!-- CARD 1: Vídeo do YouTube -->
+      <!-- Classes: col-lg-4 (3 por linha em telas grandes), col-md-6 (2 em telas médias), mb-4 (margem inferior) -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <!-- O vídeo foi colocado dentro de um container responsivo -->
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/b4Q_4UAr5os?si=3BsQ8xGV5E8mjPLA" title="YouTube video player" allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título da Copa do Brasil</h5>
+            <p class="card-text">Um vídeo que conta sobre o título do São Paulo.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: Imagem Responsiva -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <picture>
+            <!-- Nota: Verifique se os caminhos das imagens estão corretos -->
+            <source media="(max-width:50px)" srcset="dan-droids-pq">
+            <img src="dan-droids.png" class="card-img-top" alt="Boneco do Android">
+          </picture>
+          <div class="card-body">
+            <h5 class="card-title">Projeto Android</h5>
+            <p class="card-text">Site que conta sobre a história do mascote do Android.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CARD 3: Modelo para Adicionar Novos Projetos -->
+      <!-- Para usar: copie e cole este bloco e altere a imagem, título e texto -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <!-- Use uma imagem de placeholder ou o caminho para sua imagem -->
+          <img src="1644183040645.png" class="card-img-top" alt="Imagem do novo projeto">
+          <div class="card-body">
+            <h5 class="card-title">Conheça Minhas redes Socias </h5>
+            <p class="card-text">Acesse minhas redes sociais para conhecer um pouco mais sobre meu trabalho.</p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- Fim da "row" -->
+  </div> <!-- Fim do "container" -->
+
+<!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>© 2025 Meu Portfólio - Todos os direitos reservados. <span class="assinatura">Criado por Matheus</span></p>
+  </footer>
+
+  <!-- Bootstrap JS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
